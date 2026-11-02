@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website display properly on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Cozy Book Café | Books, Coffee and a Cosy Reading Space</title>
+    <meta name="description" content="Discover The Cozy Book Café, a welcoming Johannesburg-inspired café for book lovers, coffee, cakes and relaxing reading time.">
+    <meta name="keywords" content="Cozy Book Café, book café Johannesburg, coffee shop, reading space, books and coffee, Rosebank, Sandton">
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+
+<body class="home-page">
+
+    <!-- Header section with the café logo, name and short introduction -->
+    <header>
+
+        <!-- Café logo -->
+        <img src="_images/cozy-book-cafe-logo.png" srcset="_images/cozy-book-cafe-logo-320.jpg 320w, _images/cozy-book-cafe-logo-640.jpg 640w, _images/cozy-book-cafe-logo-1024.jpg 1024w" sizes="(max-width: 700px) 120px, 150px" alt="The Cozy Book Café Logo" width="200">
+
+        <!-- Name of the café -->
+        <h1>The Cozy Book Café</h1>
+
+        <!-- Short description of the café -->
+        <p>A warm place for books, coffee and good company.</p>
+
+        <!-- Main navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Books & Café</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main content of the homepage -->
+    <main>
+
+        <!-- Welcome section introducing the café -->
+        <section>
+            <h2>Welcome to The Cozy Book Café</h2>
+
+            <!-- Image showing the inside of the café -->
+            <img src="_images/cozy-book-cafe-interior.png"
+                 srcset="_images/cozy-book-cafe-interior-320.jpg 320w, _images/cozy-book-cafe-interior-640.jpg 640w" sizes="(max-width: 700px) 94vw, (max-width: 1024px) 90vw, 800px" alt="Inside The Cozy Book Café"
+                 width="500">
+
+            <!-- Introduction to the café -->
+            <p>
+                Welcome to The Cozy Book Café, a comfortable space where
+                book lovers can relax, read, enjoy coffee and connect with
+                other people.
+            </p>
+
+            <p>
+                Whether you want to discover a new book, enjoy a cup of
+                coffee or simply spend a quiet afternoon reading, our café
+                is the perfect place to visit.
+            </p>
+        </section>
+
+        <!-- Section explaining the products and services offered -->
+        <section>
+            <h2>What We Offer</h2>
+
+            <ul>
+                <li>A selection of books</li>
+                <li>Freshly prepared coffee and drinks</li>
+                <li>Light meals and cakes</li>
+                <li>A comfortable reading environment</li>
+                <li>Book-related events</li>
+            </ul>
+        </section>
+
+        <!-- Photo gallery: click a photo to open it in the lightbox viewer -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Select a photo to view it larger. Use the arrow keys or buttons to browse and Escape to close.</p>
+            <div class="gallery-grid">
+                <button type="button" class="gallery-item" data-full="_images/cozy-book-cafe-interior.png" data-alt="Inside The Cozy Book Café with comfortable seating and bookshelves">
+                    <img src="_images/cozy-book-cafe-interior-320.jpg" alt="Inside The Cozy Book Café with comfortable seating and bookshelves" loading="lazy" width="320">
+                </button>
+                <button type="button" class="gallery-item" data-full="_images/cozy-book-cafe-books-shelf.png" data-alt="Books available at The Cozy Book Café">
+                    <img src="_images/cozy-book-cafe-books-shelf-320.jpg" alt="Books available at The Cozy Book Café" loading="lazy" width="320">
+                </button>
+                <button type="button" class="gallery-item" data-full="_images/cozy-book-cafe-coffee-cup.png" data-alt="Coffee served at The Cozy Book Café">
+                    <img src="_images/cozy-book-cafe-coffee-cup-320.jpg" alt="Coffee served at The Cozy Book Café" loading="lazy" width="320">
+                </button>
+                <button type="button" class="gallery-item" data-full="_images/cozy-book-cafe-cakes-treats.png" data-alt="Cakes and treats at The Cozy Book Café">
+                    <img src="_images/cozy-book-cafe-cakes-treats-320.jpg" alt="Cakes and treats at The Cozy Book Café" loading="lazy" width="320">
+                </button>
+            </div>
+        </section>
+
+        <!-- Call-to-action section encouraging visitors to explore the website -->
+        <section>
+            <h2>Visit Us</h2>
+
+            <p>
+                Come and enjoy a relaxing experience surrounded by books.
+            </p>
+
+            <!-- Link to the books and café products page -->
+            <a href="products.html">Explore Our Books & Café</a>
+        </section>
+
+    </main>
+
+    <!-- Footer containing the copyright information -->
+    <footer>
+        <p>&copy; 2026 The Cozy Book Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js_assets/script.js" defer></script>
+</body>
+</html>

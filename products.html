@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website display correctly on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Books, Coffee and Cakes | The Cozy Book Café</title>
+    <meta name="description" content="Explore featured books, coffee, tea and freshly baked treats at The Cozy Book Café. Search the featured book collection by title or genre.">
+    <meta name="keywords" content="books, fiction books, self-development books, coffee menu, cakes, muffins, book search, Cozy Book Café">
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+
+<body class="products-page">
+
+    <!-- Header section containing the café logo, title and navigation -->
+    <header>
+
+        <!-- Café logo -->
+        <img src="_images/cozy-book-cafe-logo.png" srcset="_images/cozy-book-cafe-logo-320.jpg 320w, _images/cozy-book-cafe-logo-640.jpg 640w, _images/cozy-book-cafe-logo-1024.jpg 1024w" sizes="(max-width: 700px) 120px, 150px" alt="The Cozy Book Café Logo" width="200">
+
+        <!-- Page heading -->
+        <h1>Books & Café</h1>
+
+        <!-- Main navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" aria-current="page">Books & Café</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main content of the Books & Café page -->
+    <main>
+
+        <!-- Section introducing the different types of books available -->
+        <section>
+            <h2>Our Books</h2>
+
+            <img src="_images/cozy-book-cafe-books-shelf.png" srcset="_images/cozy-book-cafe-books-shelf-320.jpg 320w, _images/cozy-book-cafe-books-shelf-640.jpg 640w" sizes="(max-width: 700px) 94vw, (max-width: 1024px) 90vw, 800px" alt="Books available at The Cozy Book Café" width="400">
+
+            <p>
+                Our café offers a selection of books for different
+                interests and age groups. Customers can enjoy reading
+                while relaxing with their favourite drink.
+            </p>
+
+            <ul>
+                <li>Fiction</li>
+                <li>Romance</li>
+                <li>Mystery</li>
+                <li>Self-development</li>
+                <li>Young adult books</li>
+            </ul>
+        </section>
+
+                    <!-- Dynamic, searchable featured book collection -->
+        <section>
+            <h2>Featured Books</h2>
+            <div class="product-controls">
+                <label for="book-search">Search books by title or genre</label>
+                <input type="search" id="book-search" placeholder="e.g. fiction or Atomic Habits" autocomplete="off">
+                <label for="genre-filter">Filter by genre</label>
+                <select id="genre-filter">
+                    <option value="all">All genres</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="self-development">Self-development</option>
+                    <option value="classic">Classic</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+                <p id="book-results" class="results-count" aria-live="polite">Loading featured books…</p>
+            </div>
+            <div class="table-scroll">
+                <table id="featured-books">
+                    <caption>Featured Book Collection</caption>
+                    <thead>
+                        <tr><th scope="col">Book</th><th scope="col">Genre</th><th scope="col">Price</th><th scope="col">Availability</th></tr>
+                    </thead>
+                    <tbody id="book-list">
+                        <tr><td colspan="4">Featured books will load here when JavaScript is available.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+<!-- Section displaying the drinks available at the café -->
+        <section>
+            <h2>Our Drinks</h2>
+
+            <img src="_images/cozy-book-cafe-coffee-cup.png"
+                 srcset="_images/cozy-book-cafe-coffee-cup-320.jpg 320w, _images/cozy-book-cafe-coffee-cup-640.jpg 640w" sizes="(max-width: 700px) 94vw, (max-width: 1024px) 90vw, 800px" alt="Coffee served at The Cozy Book Café"
+                 width="400">
+
+            <ul>
+                <li>Americano - R30</li>
+                <li>Cappuccino - R35</li>
+                <li>Café Latte - R38</li>
+                <li>Hot Chocolate - R35</li>
+                <li>Tea - R25</li>
+            </ul>
+        </section>
+
+        <!-- Section displaying cakes and other treats -->
+        <section>
+            <h2>Our Treats</h2>
+
+            <img src="_images/cozy-book-cafe-cakes-treats.png"
+                 srcset="_images/cozy-book-cafe-cakes-treats-320.jpg 320w, _images/cozy-book-cafe-cakes-treats-640.jpg 640w, _images/cozy-book-cafe-cakes-treats-1024.jpg 1024w" sizes="(max-width: 700px) 94vw, (max-width: 1024px) 90vw, 800px" alt="Cakes and treats at The Cozy Book Café"
+                 width="400">
+
+            <ul>
+                <li>Chocolate Cake - R45</li>
+                <li>Carrot Cake - R45</li>
+                <li>Blueberry Muffin - R30</li>
+                <li>Chocolate Muffin - R30</li>
+            </ul>
+        </section>
+
+        <!-- Section encouraging visitors to contact the café -->
+        <section>
+            <h2>Want to Know More?</h2>
+
+            <p>
+                If you have questions about our books, drinks or treats,
+                you can send us an enquiry.
+            </p>
+
+            <a href="enquiry.html">Make an Enquiry</a>
+        </section>
+
+    </main>
+
+    <!-- Footer containing the copyright information -->
+    <footer>
+        <p>&copy; 2026 The Cozy Book Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js_assets/script.js" defer></script>
+</body>
+</html>
